@@ -1,0 +1,75 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+#page-wrapper {
+    margin-top: 40px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+#sidebar-menu {
+    width: 350px;
+    margin-right: 10px;
+    z-index: 1;
+    min-height: 500px;
+    float: left;
+}
+
+.v-sidebar-menu {
+
+    .active-item {
+        background-color: #eeeeee;
+    }
+
+    div.vsm-item.first-item > a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    div.vsm-item.first-item a.vsm-link:hover,
+    div.vsm-item.first-item.open-item > a.vsm-link {
+        background-color: #eeeeee;
+    }
+
+    div.vsm-item.first-item > a:hover {
+        text-decoration: none;
+    }
+
+    button.collapse-btn {
+        display: none;
+    }
+
+    & .vsm-arrow {
+        width: 30px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 900;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s transform;
+        &:after {
+          content: '\f104';
+          font-family: 'FontAwesome';
+        }
+        &.open-arrow {
+          transform: translateY(-50%) rotate(-90deg);
+        }
+    }
+
+    .vsm-dropdown .vsm-list .vsm-item a {
+        padding-left: 37px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 14px;
+        display: block;
+    }
+
+    .vsm-dropdown .vsm-list .vsm-item a:hover {
+        text-decoration: none;
+    }
+}
